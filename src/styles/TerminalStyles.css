@@ -1,0 +1,113 @@
+.terminal-container {
+    position: relative;
+    border-radius: 0.75rem;
+    overflow: auto;
+}
+
+.terminal-container::-webkit-scrollbar {
+    display: none;
+}
+
+.terminal-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+@media (max-width: 768px) {
+    .terminal-container {
+        max-height: 500px;
+    }
+}
+
+.scan-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0.75rem;
+    pointer-events: none;
+    background: repeating-linear-gradient(to bottom,
+            transparent,
+            transparent 1px,
+            rgba(255, 255, 255, 0.05) 2px,
+            rgba(255, 255, 255, 0.05) 3px);
+    z-index: 1;
+}
+
+.screen-flicker {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0.75rem;
+    pointer-events: none;
+    background: rgba(18, 16, 16, 0.05);
+    animation: flicker-animation 10s infinite;
+}
+
+.effect-wrapper {
+    position: relative;
+    min-height: 100%;
+}
+
+.terminal-container-fr {
+    position: relative;
+    border-radius: 9999px;
+}
+
+.scan-lines-fr {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 9999px;
+    pointer-events: none;
+    background: repeating-linear-gradient(to bottom,
+            transparent,
+            transparent 1px,
+            rgba(255, 255, 255, 0.05) 2px,
+            rgba(255, 255, 255, 0.05) 3px);
+    z-index: 1;
+}
+
+.screen-flicker-fr {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 9999px;
+    pointer-events: none;
+    background: rgba(18, 16, 16, 0.05);
+    animation: flicker-animation 10s infinite;
+}
+
+@keyframes flicker-animation {
+
+    0%,
+    10%,
+    20%,
+    30%,
+    40%,
+    50%,
+    60%,
+    70%,
+    80%,
+    90%,
+    100% {
+        opacity: 1;
+    }
+
+    5%,
+    25%,
+    35%,
+    45%,
+    55%,
+    85%,
+    95% {
+        opacity: 0.9;
+    }
+}
