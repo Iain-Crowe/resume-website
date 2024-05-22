@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import TerminalButton from "../components/TerminalButton";
 import Typewriter from "../components/Typewriter";
 
-import "../styles/HomeStyles.css";
+import "../styles/TerminalStyles.css";
 
 import portrait from "../assets/portrait.jpg";
 

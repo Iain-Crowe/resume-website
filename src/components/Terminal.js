@@ -11,7 +11,7 @@ import "../styles/TerminalStyles.css";
 
 function Terminal() {
     return (
-        <div className="mx-[27.5vw] h-[97vh] terminal-container bg-theme-dark/95 text-theme-green font-mono rounded-xl shadow-lg border-2 border-[#222] overflow-auto">
+        <div className="md:ml-72 md:mr-16 lg:w-[54rem] lg:ml-[27.5vw] h-[97vh] terminal-container bg-theme-dark/95 text-theme-green font-mono rounded-xl shadow-lg border-2 border-[#222] overflow-auto">
             <div className="effect-wrapper p-4">
                 <div className="scan-lines"></div>
                 <div className="screen-flicker"></div>
