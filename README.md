@@ -13,7 +13,7 @@ This project is a portfolio website modeled after a terminal interface, offering
 To set up this project locally, follow these steps:
 
 ```bash
-git clone https://github.com/yourusername/terminal-portfolio.git
+git clone https://github.com/Iain-Crowe/terminal-portfolio.git
 cd terminal-portfolio
 npm install
 ```
