@@ -11,7 +11,7 @@ function Sidebar() {
     };
 
     return (
-        <aside className="fixed p-4 text-theme-gray top-[33vh] w-[14rem] left-4 z-10 terminal-container items-start font-mono rounded-xl bg-theme-dark/90 border-2 border-[#222]">
+        <aside className="fixed invisible md:visible p-4 text-theme-gray top-[33vh] w-[14rem] left-4 z-10 terminal-container items-start font-mono rounded-xl bg-theme-dark/90 border-2 border-[#222]">
             <div className="scan-lines"></div>
             <div className="screen-flicker"></div>
             <div className="mb-2 flex items-center pl-3">

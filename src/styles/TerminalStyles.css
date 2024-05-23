@@ -13,12 +13,6 @@
     scrollbar-width: none;
 }
 
-@media (max-width: 768px) {
-    .terminal-container {
-        max-height: 500px;
-    }
-}
-
 .scan-lines {
     position: absolute;
     top: 0;

@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import Header from "./components/Header";
+import Sidebar from "./components/Sidebar";
 import Terminal from "./components/Terminal";
 import Footer from "./components/Footer";
 
 import landscape from "./assets/landscape.jpg";
-import Sidebar from "./components/Sidebar";
 
 function App() {
     return (
@@ -18,7 +18,7 @@ function App() {
                 <div className="relative h-screen bg-transparent">
                     <Header />
                     <Sidebar />
-                    <div className="absolute top-0 mt-[1rem] h-[100vh - 1rem] w-full">
+                    <div className="absolute top-0 sm:mt-0 mt-[1rem] sm:h-screen h-[100vh - 1rem] w-full">
                         <Terminal />
                     </div>
                     <Footer />

@@ -16,7 +16,7 @@ function Footer() {
                     <div className="screen-flicker-fr"></div>
                     <button
                         onClick={togglePopup}
-                        className="text-white focus:outline-none">
+                        className="text-theme-gray focus:outline-none">
                         <i
                             className={`fas ${
                                 isOpen ? "fa-chevron-left" : "fa-share-alt"
