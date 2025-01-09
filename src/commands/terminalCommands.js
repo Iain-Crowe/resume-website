@@ -79,6 +79,7 @@ const terminalCommands = (username, hostname) => {
 			link.click();
 
 			setOutput((prev) => [
+				...prev,
 				`${username}@${hostname}:~$ resume`,
 				"Downloading resume...",
 			]);
